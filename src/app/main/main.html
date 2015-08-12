@@ -1,4 +1,4 @@
-<div class="container">
+<div class="wrapper">
 
   <div>
     <acme-navbar creationDate="main.creationDate" />
@@ -10,15 +10,15 @@
       <img src="assets/images/yeoman.png" alt="I'm Yeoman"><br>
       Always a pleasure scaffolding your apps.
     </p>
-    <p class="animated infinite" ng-class="main.classAnimation">
+    <!--p class="animated infinite" ng-class="main.classAnimation">
       <button type="button" class="btn btn-lg btn-success" ng-click="main.showToastr()">Splendid Toastr</button>
-    </p>
-    <p>
+    </p-->
+    <!--p>
       With ♥ thanks to the contributions of<acme-malarkey extra-values="['Yeoman', 'Gulp', 'Angular']" />
-    </p>
+    </p-->
   </div>
 
-  <div class="row">
+  <div class="row no-padding">
     <div class="col-sm-6 col-md-4" ng-repeat="awesomeThing in main.awesomeThings | orderBy:'rank'">
       <div class="thumbnail">
         <img class="pull-right" ng-src="assets/images/{{ awesomeThing.logo }}" alt="{{ awesomeThing.title }}">
