@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.14/angular.min.js"></script>
+            <script type="text/javascript" src="http://demos.amitavroy.com/learningci/assets/js/xml2json.js" charset="UTF-8"></script>
+            <meta charset="utf-8">
+            <title>Parsing XML by UchihaCFC</title>
+        </head>
+        <body ng-app="rainbowsApp">
+        <h2>Parsing XML Rainbows</h2>
+        <input type="text" ng-model="search" class="search-query" placeholder="Search">
+        <div ng-controller="rainbows"><ol><li ng-repeat="rainbow in rainbows | filter:search">{{rainbow.name}}</div>
+        <script>
+        var rainbowApp = angular.module('rainbowsApp',[]);
+
+        rainbowApp.factory('rainbowFactory',function($http){
+          var factory = [];
+
+          factory.getRainbows = function(){
+            return $http.get("http://api.rainbow.agenciaparadoja.com/v1/products");
+          }
+
+            return factory;
+        });
+
+        rainbowApp.controller('rainbows',function($scope,rainbowFactory){
+
+          $scope.rainbows = [];
+          loadRainbows();
+
+          function loadRainbows(){
+            rainbowFactory.getRainbows().success(function(data){
+                rainbows  = x2js.xml_str2json(data);
+                console.log(rainbows.item);
+                $scope.rainbows = rainbows.item;
+            });
+            }
+        });
+</script>
+</body>
+</html>
