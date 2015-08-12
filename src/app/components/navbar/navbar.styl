@@ -1,10 +1,15 @@
+//Fonts & colors
+$main-color = rgba(235,32,38,1)
+$secondary-color = rgba(1,81,158,1)
 $body-color = rgba(255,255,255,1)
 $text-color-primary = rgba(51,51,51,1)
-$font-family-primary = 'Open Sans', Arial, Verdana
 $text-color-secondary = rgba(255,255,255,1)
-$main-color = rgba(235,32,38,1)
 $font-size = 16px
+$font-family-primary = 'Open Sans', Arial, Verdana
+$font-family-secondary = 'Hind', Arial, Verdana
+$footer-text-color = rgba(153,153,153,1)
 
+$icon-book-color = rgba(243, 119, 53, 1)
 .acme-navbar-text
   color: white
 
@@ -106,3 +111,666 @@ textarea.form-control
 .navbar-toggle 
 	margin-top 30px
 	margin-right 28px
+
+.carousel-caption
+	text-align left 
+	color $text-color-secondary
+	height 24rem
+	top 50%
+	transform translateY(-50%)
+	.carousel-title 
+		text-transform uppercase 
+		font-size 2.0833333125rem 
+	.carousel-subtitle 
+		font-size 5.2725rem 
+		line-height 1.2
+	.btn-products 
+		text-transform uppercase
+		display block 
+		background $main-color 
+		color $text-color-secondary
+		padding 1.5rem 
+		width 25%
+		&:hover 
+			color $text-color-secondary
+			text-decoration none
+	
+
+.demo 
+	width: 100%
+	
+.carousel 
+	top 14rem
+	
+.lightSlider 
+	list-style none outside none
+	padding-left 0
+	margin-bottom 0
+
+.lightSlider-item
+	display inline
+	float left
+	margin-right: 6px
+	cursor pointer
+	img 
+		display: block
+		height: auto
+		max-width: 100%
+
+.product-detail-container 
+	padding 4rem 0
+	
+.cotization-list
+	list-style none 
+	position relative
+	top 0
+	padding 0
+	.cotization-item 
+		padding .1rem 1rem
+		h3
+			font-size 1.1rem 
+			text-transform uppercase
+			color #a1a1a1
+		p 
+			font-size 1.7rem
+			color #0053A0
+			font-weight bold
+		&:nth-child(odd)
+			background #F7F5F8
+			
+		&:last-child
+			background transparent  
+			a 
+				color #fff 
+				background-color: #EB2026;
+				text-align center 
+				display block 
+				padding 1rem 4rem 
+				transition .5s all ease-in
+				-webkit-transition .5s all ease-in
+				-moz-transition .5s all ease-in
+				&:hover 
+					text-decoration none
+					background-color: #BF1419;
+					transition .5s all ease-out
+					-webkit-transition .5s all ease-out
+					-moz-transition .5s all ease-out
+					
+.cotization-list .cotization-item:last-child a::after
+	content: ""
+	display: block
+	width: 31px
+	height: 31px
+	background-image: url("/assets/images/controls.png")
+	position: absolute
+	right: 9rem
+	bottom: 0.8rem
+	background-repeat: no-repeat
+	background-position: -37px 0px
+
+.welcome-section
+	height 44rem
+	padding 8rem 0
+	
+.welcome-section_content 
+	padding 1rem 0
+	h2 
+		font-size 3.5rem
+		color $secondary-color
+	h3 
+		font-size 1.58333125rem
+		color $text-color-primary
+	
+	p 
+		text-align justify 
+		color $text-color-primary
+		font-size 1.58333125rem
+		
+.product-features-section 
+	background url('/assets/images/porque-rainbow.jpg')
+	background-size cover 
+	background-repeat no-repeat
+	background-position center center
+	height 52rem 
+	
+	.product-description-title, .product-description-subtitle 
+		color $text-color-secondary
+	.product-description-title 
+		font-size 3.5rem
+		padding-top 6rem
+	.product-description-subtitle 
+		font-size 1.25rem
+
+
+.book-icon-container
+	width 50%
+	margin 0 auto 3rem auto 
+	i  
+		color $icon-book-color
+		
+
+.thumbnail 
+	background-color transparent 
+	border 1px solid transparent
+	.caption
+		color $text-color-secondary 
+		h3 
+			font-size 1.6666666875rem
+		p 
+			font-size 1.1666666875rem 
+			
+.product-description-section
+	width 100% 
+	background $secondary-color
+	height 158px
+	color $text-color-secondary
+	h3 
+		font-size 2.5rem
+
+hr.line-divider 
+	margin-top 0
+	margin-bottom 0
+	border 0
+	border-top 1px solid $main-color
+	height .375rem
+	background-color $main-color
+	
+.newsletter-container 
+	height 158px 
+	.newsletter-container_block
+		height 158px
+		h3
+			padding 2rem 0
+			margin 3rem 0
+	
+		.btn-email 
+			display inline-block 
+			height 48px
+			width 5rem 
+			background-color $main-color
+			color $text-color-secondary
+			font-size 2.5rem
+			margin-left -.4rem
+			padding 0 1.8rem
+
+i.fa-angle-right 
+	font-size 3.5rem 
+	position relative
+	top .6rem
+	left .2rem
+
+input[type="email"]
+	color $text-color-primary
+	width 409px
+	height 48px
+	margin 5rem 0
+	padding 0
+	border 0 
+	text-indent 1rem 
+	
+.social-media_newsletter 
+	display inline-block
+	margin-left 4rem
+	position relative
+	top -0.25rem
+	&::before 
+		content ""
+		display inline-block
+		height 48px 
+		width 1px 
+		background-color $text-color-secondary
+		position relative 
+		top 2rem 
+		left -2rem 
+
+.related-products-section
+	padding 3rem 0
+
+.related-products-title
+	font-size 3.5rem
+	padding 2rem 0 4rem 0 
+	color $secondary-color
+	font-weight bold
+
+.related-caption h3 
+	text-align center
+	color $secondary-color
+	font-weight bold
+	
+@media screen and (min-width: 320px) and (max-width: 639px)
+	body
+		background $body-color
+	
+	.carousel-caption 
+		padding 7rem 0
+		top 50%
+		-webkit-transform translateY(-50%)
+		-ms-transform translateY(-50%)
+		-moz-transform translateY(-50%)
+		transform translateY(-50%)
+		.carousel-title 
+			font-size 1.3rem 
+		.carousel-subtitle 
+			font-size 1.2rem 
+		.btn-products 
+			padding 0.2rem
+			width 35%
+			font-size 1rem
+	
+	.phone-number-content, .social-media 
+		display inline-block 
+		width 80%
+		vertical-align middle 
+		
+	.social-media 
+		width 14%
+		margin 0
+		padding 0
+		.social-media_fb 
+			text-align center 
+			
+	.phone-list 
+		line-height 1 
+		margin-left 0
+		padding-left 0
+		li:first-child 
+			text-align left 
+			width 37%
+			line-height 48px
+		li:nth-child(2),
+		li:nth-child(3),
+		li:last-child 
+			display inline-block 
+			vertical-align middle  
+			width 64%
+			position absolute 
+			top 2px
+			left 30%
+		
+		li:nth-child(3)
+			top 18px 
+			
+		li:last-child 
+			top 34px
+
+	/* Brand & Navigation Area */
+	.navbar-default .navbar-brand 
+		padding-left 10px 
+	
+	.navbar-toggle 
+		padding 9px 10px 
+		margin-top 31px 
+		margin-right 17px 
+		
+	.navbar-nav 
+		height auto 
+		width 100% 
+		margin 0
+		padding 0
+		background $body-color  
+		position relative
+		z-index 2
+		li 
+			margin-left 5%
+			a 
+				line-height 37px 
+				padding 0 10px 
+				
+	/* Welcome Section */ 
+	.welcome-container 
+		height 70rem 
+		margin-top 12rem
+		
+	/* Product Features Section */ 
+	.product-features-section
+		height 148rem 
+		.product-description-title
+			padding-top 2rem 
+			font-size 3.2rem 
+			
+	.book-icon-container
+		width 100%
+		& img 
+			display inline-block 
+			width 40%
+
+	/* Product Description Section */ 
+	.product-description-section
+		height 30rem 
+		.newsletter-container
+			height 100% 
+			.newsletter-container_block h3 
+				padding 4rem 0 
+				margin 2rem 0
+
+	input[type="email"]
+		width 82%
+		margin 0 
+	
+	.social-media_newsletter 
+		display none 
+		
+	.row-mobile
+		margin-left 0 !important 
+		margin-right 0 !important
+		
+	.developers-container,
+	.copyright
+		text-align center 
+	
+	.thumbnail
+		height 29rem !important
+		padding 9rem 0
+	
+	.related-products-section 
+		padding 7rem 0
+		
+	.thumbnail-category 
+		padding 6rem 0
+	
+
+@media screen and (min-width: 640px) and (max-width: 767px)
+	.phone-number-content, .social-media 
+		display inline-block 
+		width 80%
+		vertical-align middle 
+		
+	.social-media 
+		width 14%
+		margin 0
+		padding 0
+		.social-media_fb 
+			text-align center 
+		
+	.phone-list 
+		line-height 1 
+		margin-left 0
+		padding-left 0
+		li:first-child 
+			text-align left 
+			width 37%
+			line-height 48px
+		li:nth-child(2),
+		li:nth-child(3),
+		li:last-child 
+			display inline-block 
+			vertical-align middle  
+			width 64%
+			position absolute 
+			top 2px
+			left 30%
+			text-align left	
+		li:nth-child(3)
+			top 18px 
+				
+		li:last-child 
+			top 34px
+			
+	.navbar-toggle 
+		margin-top  30px 
+		margin-right 40px 
+		
+	.navbar-nav 
+		height auto 
+		width 100% 
+		margin 0
+		padding 0
+		background $body-color  
+		position relative
+		z-index 2
+		li 
+			margin-left 5%
+			a 
+				line-height 37px 
+				padding 0 10px 
+	/* Welcome Section */ 
+	.welcome-container 
+		height 70rem 
+		
+	/* Product Features Section */ 
+	.product-features-section
+		height 148rem 
+		.product-description-title
+			padding-top 2rem 
+			font-size 3.2rem 
+			
+	.book-icon-container
+		width 100%
+		& img 
+			display inline-block 
+			width 40%
+	/* Product Description Section */ 
+	.product-description-section
+		height 30rem 
+		.newsletter-container
+			height 100% 
+			.newsletter-container_block h3 
+				padding 4rem 0 
+				margin 2rem 0
+	input[type="email"]
+		width 90%
+		margin 0 
+	
+	.social-media_newsletter 
+		display none 
+		
+	.row-mobile
+		margin-left 0 !important 
+		margin-right 0 !important
+		
+	.developers-container,
+	.copyright
+		text-align center 
+	
+
+@media screen and (min-width: 768px) and (max-width: 1023px)
+	.phone-number-content, .social-media 
+		display inline-block 
+		width 80%
+		vertical-align middle 
+		
+	.social-media 
+		width 14%
+		margin 0
+		padding 0
+		.social-media_fb 
+			text-align center 
+	.phone-list 
+		line-height 1 
+		margin-left 0
+		padding-left 0
+		li:first-child 
+			font-weight normal 
+			width 16%
+			margin-top -1.4rem
+		li:nth-child(2),
+		li:nth-child(3),
+		li:last-child 
+			width: 15%
+			line-height 5.2rem
+			
+		li:nth-child(3)
+			top 18px 	
+		li:last-child 
+			top 34px
+			
+	.navbar-toggle 
+		margin-top  30px 
+		margin-right 40px 
+		
+	.navbar-nav 
+		height auto 
+		width 100% 
+		margin 1rem 1rem
+		padding 0
+		background $body-color  
+		position relative
+		z-index 2
+		li 
+			margin-left 2%
+			a 
+				line-height 37px 
+				padding 0 10px 
+			&:first-child 
+				margin-left 2%
+	/* Welcome Section */ 
+	.welcome-container 
+		height 70rem 
+		
+	/* Product Features Section */ 
+	.product-features-section
+		height 148rem 
+		.product-description-title
+			padding-top 2rem 
+			font-size 3.2rem 
+			
+	.book-icon-container
+		width 100%
+		& img 
+			display inline-block 
+			width 40%
+
+	/* Product Description Section */ 
+	.product-description-section
+		height 30rem 
+		.newsletter-container
+			height 100% 
+			.newsletter-container_block h3 
+				padding 4rem 0 
+				margin 2rem 0
+	
+	input[type="email"]
+		width 90%
+		margin 0 
+	
+	.social-media_newsletter 
+		display none 
+		
+	.row-mobile
+		margin-left 0 !important 
+		margin-right 0 !important
+		
+	.developers-container,
+	.copyright
+		text-align center 
+	
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form
+		width 71%
+		display inline-block !important
+		
+
+@media screen and (min-width: 1024px) and (max-width: 1200px)
+	.phone-number-content, .social-media 
+		display inline-block 
+		width 80%
+		vertical-align middle 
+		
+	.social-media 
+		width 14%
+		margin 0
+		padding 0
+		.social-media_fb 
+			text-align center 
+			img 
+				margin-top -.5rem 	
+	.phone-list 
+		line-height 1 
+		margin-left 0
+		padding-left 0
+		li:first-child 
+			font-weight normal 
+			width 16%
+			margin-top -1.4rem
+		li:nth-child(2),
+		li:nth-child(3),
+		li:last-child 
+			width: 15%
+			line-height 5.2rem
+		li:nth-child(3)
+			top 18px 	
+		li:last-child 
+			top 34px
+			
+	.navbar-toggle 
+		margin-top  30px 
+		margin-right 40px 
+	.navbar-nav 
+		height auto 
+		width 100% 
+		margin 1rem 1rem
+		padding 0
+		background $body-color  
+		position relative
+		z-index 2
+		li 
+			margin-left 2%
+			a 
+				line-height 37px 
+				padding 0 10px 
+			&:first-child 
+				margin-left 2%
+	/* Welcome Section */ 
+	.welcome-container 
+		height 41rem 
+	/* Product Features Section */ 
+	.product-features-section
+		height 50rem 
+		.product-description-title
+			padding-top 2rem 
+			font-size 3.2rem 
+			
+	.book-icon-container
+		width 100%
+		& img 
+			display inline-block 
+			width 40%
+	
+	/* Product Description Section */ 
+	.product-description-section
+		height 17rem 
+		.newsletter-container
+			height 100% 
+			.newsletter-container_block h3 
+				padding 4rem 0 
+				margin 2rem 0
+
+	input[type="email"]
+		width 54%
+		margin 6rem 0 1rem 0
+		display inline-block  
+	
+	.social-media_newsletter 
+		display inline-block
+	.row-mobile
+		margin-left 0 !important 
+		margin-right 0 !important
+	.developers-container,
+	.copyright
+		text-align center 
+	
+	.navbar-default .navbar-collapse, .navbar-default .navbar-form
+		width 71%
+		
+
+		display inline-block !important
+		
+
+@media all and (min-width: 640px) and (max-width: 1190px)
+	.carousel-caption 
+		padding 7rem 0
+		top 50%
+		-webkit-transform translateY(-50%)
+		-ms-transform translateY(-50%)
+		-moz-transform translateY(-50%)
+		transform translateY(-50%)
+		.carousel-title 
+			font-size 2.7rem 
+		.carousel-subtitle 
+			font-size 1.7rem 
+		.btn-products 
+			padding 0.8rem
+			width 25%
+			font-size 1rem	
+	.thumbnail 
+		height 29rem
+		padding 9rem 0
