@@ -9,7 +9,7 @@
         <body ng-app="rainbowsApp">
         <h2>Parsing XML Rainbows</h2>
         <input type="text" ng-model="search" class="search-query" placeholder="Search">
-        <div ng-controller="rainbows"><ol><li ng-repeat="rainbow in rainbows | filter:search">{{rainbow.name}}</div>
+        <div ng-controller="rainbows"><ol><li ng-repeat="rainbow in rainbows | filter:search">{{rainbow.name}} - {{rainbow.width}}</div>
         <script>
         var rainbowApp = angular.module('rainbowsApp',[]);
 
@@ -30,10 +30,10 @@
 
           function loadRainbows(){
             rainbowFactory.getRainbows().success(function(response){
-              console.log(response);
-                productos  = x2js.xml_str2json(response.data);
-                console.log(productos);
-                $scope.rainbows = productos.response;
+              // console.log(response);
+                //productos  = x2js.xml_str2json(response.data);
+                console.log(response);
+                $scope.rainbows = response;
             });
             }
         });
