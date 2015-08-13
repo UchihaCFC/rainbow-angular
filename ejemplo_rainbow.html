@@ -14,7 +14,7 @@
         var rainbowApp = angular.module('rainbowsApp',[]);
 
         rainbowApp.factory('rainbowFactory',function($http){
-          var factory = [];
+          var factory = {};
 
           factory.getRainbows = function(){
             return $http.get("http://api.rainbow.agenciaparadoja.com/v1/products");
@@ -29,8 +29,9 @@
           loadRainbows();
 
           function loadRainbows(){
-            rainbowFactory.getRainbows().success(function(data){
-                productos  = x2js.xml_str2json(data);
+            rainbowFactory.getRainbows().success(function(response){
+              console.log(response);
+                productos  = x2js.xml_str2json(response.data);
                 console.log(productos);
                 $scope.rainbows = productos.response;
             });
