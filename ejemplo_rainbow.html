@@ -30,9 +30,9 @@
 
           function loadRainbows(){
             rainbowFactory.getRainbows().success(function(data){
-                rainbows  = x2js.xml_str2json(data);
-                console.log(rainbows.item);
-                $scope.rainbows = rainbows.item;
+                productos  = x2js.xml_str2json(data);
+                console.log(productos);
+                $scope.rainbows = productos.response;
             });
             }
         });
